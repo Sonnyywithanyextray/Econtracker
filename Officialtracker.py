@@ -39,6 +39,8 @@ def extract_gdp_data(gdp_metric, countries):
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+
+        self.setWindowIcon(QtGui.QIcon('path/to/icon/file.png'))
         
         # Create welcome screen widget
         self.welcome_widget = QWidget()
@@ -48,6 +50,7 @@ class MainWindow(QMainWindow):
         self.setWindowIcon(QtGui.QIcon('globalw.png'))
         # Set the window title and size
         self.setWindowTitle("Economic Visualization Tool")
+        self.setWindowIconText("Economic Visualization Tool")
         self.resize(800, 600)
         
         # Create the main widget and set it as the central widget of the main window
